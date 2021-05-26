@@ -23,9 +23,8 @@ class BlockType extends Component {
         ? getSelectedBlocksType(editorState)
         : 'unstyled',
     };
-    modalHandler.registerCallBack(this.expandCollapse);
   }
-  
+
   componentDidMount() {
     const { modalHandler } = this.props;
     modalHandler.registerCallBack(this.expandCollapse);
